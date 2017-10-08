@@ -1,5 +1,6 @@
 # symcrypto
 
+[![GoDoc](https://godoc.org/github.com/sudo-suhas/symcrypto?status.svg)](https://godoc.org/github.com/sudo-suhas/symcrypto)
 [![Go Report Card](https://goreportcard.com/badge/github.com/sudo-suhas/symcrypto)](https://goreportcard.com/report/github.com/sudo-suhas/symcrypto)
 
 > A URL safe, string encryption/decryption library.
