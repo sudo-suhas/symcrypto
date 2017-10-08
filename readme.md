@@ -1,5 +1,7 @@
 # symcrypto
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/sudo-suhas/symcrypto)](https://goreportcard.com/report/github.com/sudo-suhas/symcrypto)
+
 > A URL safe, string encryption/decryption library.
 
 Encryption and decryption is done using a secret key.
