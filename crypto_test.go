@@ -85,7 +85,7 @@ func TestNew(t *testing.T) {
 	})
 
 	t.Run("different secrets with same first 32 chars", func(t *testing.T) {
-		// Test for initalisation with secret key having first 32 chars same. The Crypter
+		// Test for initialisation with secret key having first 32 chars same. The Crypter
 		// created with the longer key should omit some characters from the start to ensure
 		// that the secret key is not the same.
 		c1 := defCrypto(t)
@@ -111,11 +111,11 @@ func TestEncrypt(t *testing.T) {
 		}
 
 		if set[encrypted] {
-			fmt.Printf("unexpected repetetion of encrypted token: %q\n", encrypted)
+			fmt.Printf("unexpected repetition of encrypted token: %q\n", encrypted)
 			ctr++
 
 			if ctr >= threshold {
-				t.Fatalf("encrypted token repetetion exceeded threshold %d", threshold)
+				t.Fatalf("encrypted token repetition exceeded threshold %d", threshold)
 			}
 		} else {
 			set[encrypted] = true
