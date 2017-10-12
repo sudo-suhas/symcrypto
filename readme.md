@@ -1,6 +1,7 @@
 # symcrypto
 
 [![Build Status](https://travis-ci.org/sudo-suhas/symcrypto.svg?branch=master)](https://travis-ci.org/sudo-suhas/symcrypto)
+[![Coverage Status](https://coveralls.io/repos/github/sudo-suhas/symcrypto/badge.svg?branch=master)](https://coveralls.io/github/sudo-suhas/symcrypto?branch=master)
 [![GoDoc](https://godoc.org/github.com/sudo-suhas/symcrypto?status.svg)](https://godoc.org/github.com/sudo-suhas/symcrypto)
 [![Go Report Card](https://goreportcard.com/badge/github.com/sudo-suhas/symcrypto)](https://goreportcard.com/report/github.com/sudo-suhas/symcrypto)
 
