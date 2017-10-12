@@ -36,6 +36,6 @@ script:
   - megacheck $PKGS                   # "go vet on steroids" + linter
   - errcheck $PKGS                    # Check for unchecked errors
   - golint -set_exit_status $PKGS     # One last linter
-  # Run all the tests with the race detector enabled
-  - go test -v -race -covermode=count -coverprofile=profile.cov $PKGS
+  # Run all the tests, track coverage in coveralls.io
+  - go test -v -covermode=count -coverprofile=profile.cov $PKGS
   - goveralls -coverprofile=profile.cov -service=travis-ci
