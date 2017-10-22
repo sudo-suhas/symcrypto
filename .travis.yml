@@ -9,13 +9,16 @@ branches:
   only:
     - master
 
+env:
+  - DEP_VERSION="0.3.2"
+
 before_install:
   # Setup some env variables
   - GO_FILES=$(find . -iname '*.go' | grep -v /vendor/)  # All the .go files, excluding vendor/
   - PKGS=$(go list ./... | grep -v /vendor/)             # All the import paths, excluding vendor/
 
   # Setup dependency management tool
-  - curl -L -s https://github.com/golang/dep/releases/download/v0.3.1/dep-linux-amd64 -o $GOPATH/bin/dep
+  - curl -L -s https://github.com/golang/dep/releases/download/v${DEP_VERSION}/dep-linux-amd64 -o $GOPATH/bin/dep
   - chmod +x $GOPATH/bin/dep
   # To install latest version, use `go get -u github.com/golang/dep/cmd/dep`
 
